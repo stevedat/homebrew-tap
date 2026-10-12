@@ -13,7 +13,7 @@ cask "vielotus-lab" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "VieLotusLab.app"
 
