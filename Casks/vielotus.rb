@@ -1,6 +1,6 @@
 cask "vielotus" do
-  version "1.0.0"
-  sha256 "39db35e15f830bb80e0ae41a2f7f42d3b6eeecd57d863721e8573a712dd40e54"
+  version "1.1.0"
+  sha256 "ead1d803b51b418814a85c322cf960646541e92344d8dcef615eded2d99e04e5"
 
   url "https://github.com/stevedat/VieLotus-IM/releases/download/v#{version}/VieLotusIM.pkg"
   name "VieLotusIM"
