@@ -1,6 +1,6 @@
 cask "nidontfs" do
   version "1.0.0"
-  sha256 "55858edc7bea2c9e3fd62b57f14908b0bb9f72233e23f39e40bacb604272902e"
+  sha256 "bbede335b334ce6ca0e96180b48417910152566e24d92785a0bde9dc3949acde"
 
   url "https://github.com/stevedat/nidontfs-releases/releases/download/v#{version}/NidoNTFS-#{version}-universal.dmg"
   name "NidoNTFS"
