@@ -1,9 +1,9 @@
 cask "nidooffice" do
   arch arm: "-arm64", intel: ""
 
-  version "0.12.3"
-  sha256 arm:   "686aa6ac6eea68a596a7623afa9d1ef2772deec3b6d8946dae7a66d518c7be48",
-         intel: "5136a85bb4e447bb4ea7595c39e18ecf583ea9e71248f18128d13572423b3bfb"
+  version "0.12.5"
+  sha256 arm:   "aa53967628e17a7a87bdc82e3ca35c9f5d7f774cf3a5e4550d7804177747468c",
+         intel: "620b740c430bdb26e25363a2dea8574f8e3763d65b8b0d115d059e90001ebe75"
 
   url "https://github.com/stevedat/nidooffice-releases/releases/download/v#{version}/NidoOffice-#{version}#{arch}.dmg"
   name "NidoOffice"
