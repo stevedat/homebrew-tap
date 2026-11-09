@@ -1,10 +1,10 @@
 cask "nidontfs" do
-  version "1.2.1"
-  sha256 "80696326abd36e91391a09f6d8fc9a0d82641d1464a3bfdc20a86aaeac9c3cfd"
+  version "1.2.2"
+  sha256 "651390873e6ad131e86bb5b86d93a45b66a468f80257533b3a4da6e729fba15a"
 
   url "https://github.com/stevedat/nidontfs-releases/releases/download/v#{version}/NidoNTFS-#{version}-universal.dmg"
   name "NidoNTFS"
-  desc "Native NTFS Read/Write, Multi-Media USB/SSD Optimizer & NidoDrop LAN for macOS"
+  desc "Native NTFS Read/Write, S.M.A.R.T. Health & NidoDrop LAN for macOS"
   homepage "https://tools.nido-holdings.com"
 
   livecheck do
