@@ -1,7 +1,7 @@
 cask "nidooffice" do
   arch arm: "-arm64", intel: ""
 
-  version "0.12.5"
+  version "0.12.6"
   sha256 arm:   "aa53967628e17a7a87bdc82e3ca35c9f5d7f774cf3a5e4550d7804177747468c",
          intel: "620b740c430bdb26e25363a2dea8574f8e3763d65b8b0d115d059e90001ebe75"
 
