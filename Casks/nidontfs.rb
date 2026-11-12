@@ -1,10 +1,17 @@
 cask "nidontfs" do
-  version "1.2.2"
-  sha256 "651390873e6ad131e86bb5b86d93a45b66a468f80257533b3a4da6e729fba15a"
+  version "1.3.0"
 
-  url "https://github.com/stevedat/nidontfs-releases/releases/download/v#{version}/NidoNTFS-#{version}-universal.dmg"
-  name "NidoNTFS"
-  desc "Native NTFS Read/Write, S.M.A.R.T. Health & NidoDrop LAN for macOS"
+  on_arm do
+    sha256 "250f23790104251f5b234f99a0ff3b69108ddb467d4aa4fb69ae18ca0dc0f53c"
+    url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-#{version}-arm64.dmg"
+  end
+  on_intel do
+    sha256 "4a2f0914387521ce0a06b46aa0745078b943a0e1e09475426e08588e391634db"
+    url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-#{version}-x64.dmg"
+  end
+
+  name "NidoBox"
+  desc "NTFS Read/Write, NidoDrop LAN & Mac Utility Suite (Full on Apple Silicon, NTFS+LAN on Intel)"
   homepage "https://tools.nido-holdings.com"
 
   livecheck do
@@ -15,6 +22,7 @@ cask "nidontfs" do
   auto_updates true
   depends_on macos: ">= :ventura"
 
+  # Preserves Wave-1 installation path for seamless in-place updates from NidoNTFS
   app "NidoNTFS.app"
 
   zap trash: [
