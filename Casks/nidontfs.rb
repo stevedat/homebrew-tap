@@ -3,11 +3,11 @@ cask "nidontfs" do
 
   on_arm do
     sha256 "250f23790104251f5b234f99a0ff3b69108ddb467d4aa4fb69ae18ca0dc0f53c"
-    url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-#{version}-arm64.dmg"
+    url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-mac-arm64.dmg"
   end
   on_intel do
     sha256 "4a2f0914387521ce0a06b46aa0745078b943a0e1e09475426e08588e391634db"
-    url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-#{version}-x64.dmg"
+    url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-mac-x64.dmg"
   end
 
   name "NidoBox"
