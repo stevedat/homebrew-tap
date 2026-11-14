@@ -1,12 +1,12 @@
 cask "nidobox" do
-  version "1.3.0"
+  version "1.3.1"
 
   on_arm do
-    sha256 "250f23790104251f5b234f99a0ff3b69108ddb467d4aa4fb69ae18ca0dc0f53c"
+    sha256 "bf300f60c7bcab6ed8713e339394dd3604f99d08725a35c4177b70fffda2b4af"
     url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "4a2f0914387521ce0a06b46aa0745078b943a0e1e09475426e08588e391634db"
+    sha256 "76b231bd471e98cfaa82a0a726400241b109440ec73cbb88bdc98c9dd378f3a9"
     url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-mac-x64.dmg"
   end
 
@@ -22,8 +22,8 @@ cask "nidobox" do
   auto_updates true
   depends_on macos: ">= :ventura"
 
-  # Preserves Wave-1 installation path for seamless in-place updates from NidoNTFS
-  app "NidoNTFS.app"
+  # Installs as /Applications/NidoBox.app while preserving com.nido.ntfs TCC permissions & helper
+  app "NidoBox.app"
 
   zap trash: [
     "~/Library/Application Support/NidoNTFS",
