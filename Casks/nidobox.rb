@@ -1,12 +1,12 @@
 cask "nidobox" do
-  version "1.3.1"
+  version "1.4.0"
 
   on_arm do
-    sha256 "bf300f60c7bcab6ed8713e339394dd3604f99d08725a35c4177b70fffda2b4af"
+    sha256 "e7907c01865d0f014082f834e230dc47cf18cd5df4500d0683a6eb5836c09307"
     url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "76b231bd471e98cfaa82a0a726400241b109440ec73cbb88bdc98c9dd378f3a9"
+    sha256 "00a7040bda678cba6a1219704cab6045d76f345a8e1602ae6aff30b6a562653c"
     url "https://github.com/stevedat/nidobox-releases/releases/download/v#{version}/NidoBox-mac-x64.dmg"
   end
 
